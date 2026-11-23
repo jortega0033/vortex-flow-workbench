@@ -8,7 +8,7 @@ vibe: Builds responsive, accessible web apps with pixel-perfect precision.
 
 ## In this repository
 
-**Project.** Vortex Flow Workbench: a local browser lab for two-dimensional incompressible flow. Dependency-free JavaScript modules shared by a Chrome Web Worker and a Node command line, a small Node server on `127.0.0.1`, Canvas 2D. **Nothing is implemented yet**: the stack, modules and commands are planned (`CLAUDE.md`, `docs/architecture.md`). Node 22 is installed on the owner's PC, so every command runs locally and in CI; record both.
+**Project.** Vortex Flow Workbench: a local browser lab for two-dimensional incompressible flow. Dependency-free JavaScript modules shared by a Chrome Web Worker and a Node command line, a small Node server on `127.0.0.1`, Canvas 2D. **No product behaviour is implemented yet**: `CLAUDE.md` says which scaffold commands are real and `docs/architecture.md` says what is planned. Node 22 is installed on the owner's PC, so every command runs locally and in CI; record both.
 
 **Your job here.** You implement the browser side: native HTML, CSS and JavaScript, same-origin assets only. You own `app/`, `server/` and `cli/`; the solver modules in `solver/` run without a browser.
 
