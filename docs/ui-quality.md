@@ -11,7 +11,7 @@ Binding rules for the pages of this project (`app/`) and for every user-facing s
 5. No emoji used as icons or bullets, and no sparkle marks.
 6. No pill or badge on things that are not states. No all-caps, letter-spaced micro labels as section decoration.
 7. No centred hero with a slogan in an application screen. Screens open on the user's task.
-8. One accent colour, used for the primary action and the current selection. Status colours only for status.
+8. One accent colour, used for the primary action, the current step and the current selection. Status colours only for status. The focus ring is exempt (14-D2 in [design-tokens.md](design-tokens.md)).
 9. Dense, aligned layouts on a consistent spacing scale. No card grid where a table or a list is the right form.
 10. User-facing copy is plain and specific: no filler, no exclamation marks, and the same word for the same thing everywhere.
 
@@ -21,5 +21,6 @@ Binding rules for the pages of this project (`app/`) and for every user-facing s
 - User-facing copy, documentation and pull request text go through the `unslop` skill (`.claude/skills/unslop/`) before the pull request is opened.
 - Frontend Developer, Accessibility Auditor and Code Reviewer name this file in their checklists (`.claude/agents/`). The Code Reviewer gate runs on every ticket and is where these rules are enforced.
 - Rule 1 can be linted, for example `grep -rnE "border-(left|right|top|bottom)[^;]*[2-9]px" app/`. Rule 2 cannot be detected reliably from CSS, so it is a review check.
-- The repository rules in `CLAUDE.md` still apply: native HTML, CSS and JavaScript, same-origin assets only, no CDN or external font. No UI source exists yet, so nothing is checked today; every UI ticket applies the rules to its own new screens.
+- The repository rules in `CLAUDE.md` still apply: native HTML, CSS and JavaScript, same-origin assets only, no CDN or external font. Only an empty shell (`app/index.html`) exists, so nothing is checked today; every UI ticket applies the rules to its own new screens.
 - The field plot uses its own labelled colour scale for data. Rule 8 applies to the interface around it.
+- Colours, type and spacing come from the shared tokens in `app/tokens.css`; see [design-tokens.md](design-tokens.md).

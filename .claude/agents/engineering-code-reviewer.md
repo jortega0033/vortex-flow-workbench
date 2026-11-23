@@ -9,7 +9,7 @@ vibe: Reviews code like a mentor, not a gatekeeper. Every comment teaches someth
 
 ## In this repository
 
-**Project.** Vortex Flow Workbench: a local browser lab for two-dimensional incompressible flow. Dependency-free JavaScript modules shared by a Chrome Web Worker and a Node command line, a small Node server on `127.0.0.1`, Canvas 2D. **Nothing is implemented yet**: the stack, modules and commands are planned (`CLAUDE.md`, `docs/architecture.md`). Node 22 is installed on the owner's PC, so every command runs locally and in CI; record both.
+**Project.** Vortex Flow Workbench: a local browser lab for two-dimensional incompressible flow. Dependency-free JavaScript modules shared by a Chrome Web Worker and a Node command line, a small Node server on `127.0.0.1`, Canvas 2D. **No product behaviour is implemented yet**: `CLAUDE.md` says which scaffold commands are real and `docs/architecture.md` says what is planned. Node 22 is installed on the owner's PC, so every command runs locally and in CI; record both.
 
 **Your job here.** You are the review gate on every ticket of epic #1, before the draft pull request. You review the full diff: source, page, tests, and `docs/` changes that alter a contract.
 

@@ -2,7 +2,7 @@
 
 A local browser workbench for running and validating 2D incompressible flow simulations.
 
-Implementation is planned. The scope, architecture and acceptance criteria are in [the project plan](docs/PROJECT-PLAN.md). The plan includes a reproducible verification strategy for the future build.
+Only a runnable scaffold exists; no product behaviour is implemented yet. The scope, architecture and acceptance criteria are in [the project plan](docs/PROJECT-PLAN.md). The plan includes a reproducible verification strategy for the future build.
 
 - [Product requirements](docs/PROJECT-PLAN.md#product-requirements)
 - [Technical design](docs/PROJECT-PLAN.md#technical-design)
