@@ -9,3 +9,7 @@ Implementation is planned. The scope, architecture and acceptance criteria are i
 - [Implementation backlog and epic](https://github.com/jortega0033/vortex-flow-workbench/issues)
 
 Estimated implementation and verification effort is 24–38 engineering hours.
+
+## License
+
+[MIT](LICENSE) © 2026 Jake Ortega.
