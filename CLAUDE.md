@@ -6,7 +6,7 @@ Working instructions for this repository. Read this file first, then the documen
 
 A local lab for a learner: select a cavity, channel or cylinder case, step it, compare the velocity field with a reference and inspect vorticity, divergence and rejected steps. Dependency-free JavaScript modules, one Web Worker, Canvas 2D, a small Node server on `127.0.0.1`, and a command line that runs the same solver.
 
-**Nothing is implemented yet.** The repository holds the plan, the delivery tooling and the backlog in epic #1. Commands marked planned below do not work yet. Do not describe a planned thing as working, and do not claim a passing baseline: there is none.
+**Only the scaffold exists; no product behaviour is implemented yet.** The repository holds the plan, the delivery tooling, the runnable scaffold and the backlog in epic #1. Commands marked planned below do not work yet. Do not describe a planned thing as working, and do not claim a passing baseline: there is none.
 
 ## Sources of truth
 
@@ -40,9 +40,9 @@ Node 22. No install step is needed.
 
 | Purpose | Command | Status |
 |---|---|---|
-| Tests | `node --test` | planned: real with the scaffold |
-| Run the app | `node server/serve.mjs` | planned: real with the scaffold (static shell), recorded frame from #2 |
-| Command line help | `node cli/flow.mjs --help` | planned: real with the scaffold |
+| Tests | `node --test` | real (scaffold) |
+| Run the app | `node server/serve.mjs` | real (scaffold: static shell), recorded frame from #2 |
+| Command line help | `node cli/flow.mjs --help` | real (scaffold) |
 | Preflight | `node cli/flow.mjs preflight` | planned: #2 |
 | Run a case | `node cli/flow.mjs run <case>` | planned: #3 (cavity), #5, #6 |
 

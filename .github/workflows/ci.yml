@@ -14,7 +14,7 @@ concurrency:
 
 jobs:
   hook:
-    # Review gate hook self-test. The scaffold adds the product jobs.
+    # Review gate hook self-test. The product checks run in the test job.
     name: hook (${{ matrix.os }})
     runs-on: ${{ matrix.os }}
     strategy:
@@ -28,3 +28,18 @@ jobs:
           node-version: "22"
       - name: Review gate hook self-test
         run: node .claude/hooks/role-gate.mjs --self-test
+
+  test:
+    name: test
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: "22"
+      - name: Tests
+        run: node --test
