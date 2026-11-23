@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+.venv/
+node_modules/
+target/
+dist/
+.DS_Store
+
+# Review evidence and ticket worktrees (see next-ticket)
+.claude/state/
+.claude/worktrees/
+
+# Local output (never committed)
+/out/
