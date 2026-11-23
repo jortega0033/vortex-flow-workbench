@@ -2,8 +2,8 @@
 // Responsibility: loopback static server for app/ and solver/ only.
 import { createServer } from 'node:http';
 import { readFile } from 'node:fs/promises';
-import { readFileSync } from 'node:fs';
-import { extname, join, normalize, resolve, sep } from 'node:path';
+import { existsSync, readFileSync, realpathSync } from 'node:fs';
+import { extname, join, normalize, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = fileURLToPath(new URL('..', import.meta.url));
@@ -53,7 +53,9 @@ export function createApp() {
   });
 }
 
-if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+// import.meta.url is a real path, so resolve links in argv[1] before comparing.
+const entry = process.argv[1];
+if (entry && existsSync(entry) && realpathSync(entry) === fileURLToPath(import.meta.url)) {
   const args = process.argv.slice(2);
   if (args.includes('--help')) {
     process.stdout.write(help);

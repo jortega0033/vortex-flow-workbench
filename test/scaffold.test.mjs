@@ -23,10 +23,12 @@ test('cli and server help and version', () => {
   }
 });
 
-test('cli stub exits non-zero', () => {
-  const r = node('cli/flow.mjs', 'preflight');
-  assert.notEqual(r.status, 0);
-  assert.match(r.stderr, /not implemented yet: see #2/);
+test('cli stubs exit non-zero', () => {
+  for (const [args, issue] of [[['preflight'], 2], [['run', 'cavity'], 3]]) {
+    const r = node('cli/flow.mjs', ...args);
+    assert.notEqual(r.status, 0);
+    assert.match(r.stderr, new RegExp(`not implemented yet: see #${issue}`));
+  }
 });
 
 // Raw path so odd targets such as // reach the server unchanged.
