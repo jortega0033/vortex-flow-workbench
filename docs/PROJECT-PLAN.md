@@ -1,5 +1,7 @@
 # Vortex Flow Workbench
 
+> This document specifies phase 1 of the program in [#35](https://github.com/jortega0033/vortex-flow-workbench/issues/35). Hour figures in it are early estimates for that phase; its open tickets add up to 63 to 96 hours (2026-11-24). Work that it defers is planned in the later phases only where the program names it.
+
 ## Product requirements
 
 Vortex Flow Workbench is a local browser lab for exploring two-dimensional incompressible flow. A learner selects a case, runs it one step at a time or in short batches, and compares the velocity field and vorticity with a reference. It targets a CPU-only Linux desktop with Chrome and an installed Node.js runtime. All presets and fixtures are generated from the documented equations and run offline.

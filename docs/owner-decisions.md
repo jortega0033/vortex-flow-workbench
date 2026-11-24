@@ -37,3 +37,13 @@ The plan leaves these open. Each is a recommendation by the orchestrator, adopte
 | #7 | Browser and command line tolerance | Exact equality of settings, coordinates and step counts; 1e-12 relative for diagnostics, with any wider value justified in the ticket. |
 | later | Published benchmarks | Ghia and Featflow comparisons are a later milestone and no ticket here adds reference data. |
 | none | Licence | MIT, added by the owner on 2026-11-23 (`LICENSE`). No ticket changes it. |
+
+## Program decisions (owner, 2026-11-24)
+
+The owner accepted the goal and each suggestion below. They apply from the phase they name; the rules of `CLAUDE.md` hold for phase 1 as written.
+
+| Decision | Implemented in |
+|---|---|
+| The repository has a program goal above phase 1: a computational fluid dynamics laboratory in the browser, in six phases. | Program issue #35 |
+| The plan is CPU only. Suggested: the CPU double-precision solver stays the reference for the GPU. | Program issue #35 |
+| Reference data needs citations and permission. Suggested: cite, and store only values that may be shared. | Program issue #35 |
