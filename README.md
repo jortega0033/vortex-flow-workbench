@@ -8,7 +8,7 @@ Only a runnable scaffold exists; no product behaviour is implemented yet. The sc
 - [Technical design](docs/PROJECT-PLAN.md#technical-design)
 - [Implementation backlog and epic](https://github.com/jortega0033/vortex-flow-workbench/issues)
 
-Estimated implementation and verification effort is 24–38 engineering hours.
+The first plan of phase 1 said 24–38 engineering hours. Its open tickets, with tests and review, add up to 63 to 96 hours; the whole program is larger and is described below. All figures are estimates.
 
 ## Program goal
 
